@@ -1,0 +1,31 @@
+{
+	"name": "osETH",
+	"description": "osETH is a liquid token that allows users to mint and redeem their ETH stake at any time. This feature allows users to easily access their ETH stake and use it in DeFi applications, such as lending and borrowing, without having to withdraw their tokens. ",
+	"cmcId": "28476",
+	"tags": [
+		"token",
+		"osETH"
+	],
+	"links": [
+		{
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://holesky.etherscan.io/address/0xf603c5a3f774f05d4d848a9bb139809790890864"
+		},
+		{
+			"type": "website",
+			"name": "Website",
+			"url": "https://www.stakewise.io/"
+		},
+		{
+			"type": "docs",
+			"name": "StakeWise Documentation",
+			"url": "https://docs.stakewise.io/"
+		},
+		{
+			"type": "example",
+			"name": "osToken",
+			"url": "https://docs.stakewise.io/protocol-overview-in-depth/ostoken"
+		}
+	]
+}

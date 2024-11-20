@@ -1,0 +1,30 @@
+{
+	"name": "not legacy stETH vault",
+	"description": "not legacy stETH vault",
+	"tags": [
+		"vault",
+		"token:stETH"
+	],
+	"links": [
+		{
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://holesky.etherscan.io/address/0x5c444e84986953f592688df64d7f87eb95d04294"
+		},
+		{
+			"type": "website",
+			"name": "https://google.com",
+			"url": "everything will be found"
+		},
+		{
+			"type": "docs",
+			"name": "not legacy stETH vault Documentation",
+			"url": "https://docs.lido.fi/"
+		},
+		{
+			"type": "example",
+			"name": "not legacy stETH vault Documentation Guides Overview",
+			"url": "https://docs.lido.fi/token-guides/steth-superuser-functions"
+		}
+	]
+}

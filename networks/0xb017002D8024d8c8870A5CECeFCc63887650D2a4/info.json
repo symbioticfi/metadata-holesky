@@ -1,0 +1,22 @@
+{
+  "name": "network name 14",
+  "description": "network description 14",
+  "tags": ["network"],
+  "links": [
+    {
+      "type": "website",
+      "name": "Website",
+      "url": "https://google.com"
+    },
+    {
+      "type": "website",
+      "name": "X",
+      "url": "http://twitter.com/"
+    },
+    {
+      "type": "website",
+      "name": "Twitch",
+      "url": "https://www.twitch.tv/"
+    }
+  ]
+}

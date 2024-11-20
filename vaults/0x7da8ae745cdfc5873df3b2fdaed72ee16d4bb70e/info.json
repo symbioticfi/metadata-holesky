@@ -1,0 +1,25 @@
+{
+	"name": "ETHx",
+	"tags": [
+		"vault",
+		"legacy",
+		"token:ETHx"
+	],
+	"links": [
+		{
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://holesky.etherscan.io/address/0x7da8ae745cdfc5873df3b2fdaed72ee16d4bb70e"
+		},
+		{
+			"type": "website",
+			"name": "Website",
+			"url": "https://www.staderlabs.com/"
+		},
+		{
+			"type": "docs",
+			"name": "ETHx Documentation",
+			"url": "https://www.staderlabs.com/docs-v1/Ethereum/Introduction/"
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"name": "stETH",
+	"description": "stETH, short for 'staked Ether' is a token designed to make Ethereum staking more inclusive and flexible for investors. It’s a tokenized representation of ether (ETH) within the Lido Finance ecosystem. stETH combines the value of initial deposits and staking rewards, allowing users to participate in Ethereum staking without the traditional 32 ETH minimum requirement.",
+	"cmcId": "8085",
+	"tags": [
+		"token",
+		"stETH"
+	],
+	"links": [
+		{
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://holesky.etherscan.io/address/0x3f1c547b21f65e10480de3ad8e19faac46c95034"
+		},
+		{
+			"type": "website",
+			"name": "Website",
+			"url": "https://lido.fi/ethereum"
+		},
+		{
+			"type": "docs",
+			"name": "Lido docs",
+			"url": "https://docs.lido.fi/"
+		},
+		{
+			"type": "example",
+			"name": "stETH superuser functions",
+			"url": "https://docs.lido.fi/token-guides/steth-superuser-functions"
+		}
+	]
+}

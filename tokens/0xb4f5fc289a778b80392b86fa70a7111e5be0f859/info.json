@@ -1,0 +1,26 @@
+{
+	"name": "ETHx",
+	"description": "ETHx allows users to benefit from Ethereum staking while maintaining liquidity for their assets.",
+	"cmcId": "27566",
+	"tags": [
+		"token",
+		"ETHx"
+	],
+	"links": [
+		{
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://holesky.etherscan.io/address/0xb4f5fc289a778b80392b86fa70a7111e5be0f859"
+		},
+		{
+			"type": "website",
+			"name": "Website",
+			"url": "https://www.staderlabs.com/"
+		},
+		{
+			"type": "docs",
+			"name": "ETHx Documentation",
+			"url": "https://www.staderlabs.com/docs-v1/Ethereum/Introduction/"
+		}
+	]
+}

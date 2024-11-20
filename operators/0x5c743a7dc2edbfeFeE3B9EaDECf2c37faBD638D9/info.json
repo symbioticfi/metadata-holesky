@@ -1,0 +1,24 @@
+{
+	"name": "operator name 17",
+	"description": "operator description 17",
+	"tags": [
+		"operator"
+	],
+	"links": [
+		{
+			"type": "website",
+			"name": "Website",
+			"url": "https://google.com"
+		},
+		{
+			"type": "website",
+			"name": "X",
+			"url": "http://twitter.com/"
+		},
+		{
+			"type": "website",
+			"name": "Twitch",
+			"url": "https://www.twitch.tv/"
+		}
+	]
+}

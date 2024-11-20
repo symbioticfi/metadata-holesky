@@ -1,0 +1,24 @@
+{
+	"name": "network name 0",
+	"description": "network description 0",
+	"tags": [
+		"network"
+	],
+	"links": [
+		{
+			"type": "website",
+			"name": "Website",
+			"url": "https://google.com"
+		},
+		{
+			"type": "website",
+			"name": "X",
+			"url": "http://twitter.com/"
+		},
+		{
+			"type": "website",
+			"name": "Twitch",
+			"url": "https://www.twitch.tv/"
+		}
+	]
+}

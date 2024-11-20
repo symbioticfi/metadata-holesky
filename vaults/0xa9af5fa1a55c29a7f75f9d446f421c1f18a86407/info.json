@@ -1,0 +1,30 @@
+{
+	"name": "osETH",
+	"tags": [
+		"vault",
+		"legacy",
+		"token:osETH"
+	],
+	"links": [
+		{
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://holesky.etherscan.io/address/0xa9af5fa1a55c29a7f75f9d446f421c1f18a86407"
+		},
+		{
+			"type": "website",
+			"name": "Website",
+			"url": "https://www.stakewise.io/"
+		},
+		{
+			"type": "docs",
+			"name": "StakeWise Documentation",
+			"url": "https://docs.stakewise.io/"
+		},
+		{
+			"type": "example",
+			"name": "osToken",
+			"url": "https://docs.stakewise.io/protocol-overview-in-depth/ostoken"
+		}
+	]
+}

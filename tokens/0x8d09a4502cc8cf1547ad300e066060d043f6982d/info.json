@@ -1,0 +1,31 @@
+{
+	"name": "wstETH",
+	"description": "It's an ERC-20 value-accruing token wrapper for stETH. Its balance does not change with each oracle report, but its value in stETH does. Internally, it represents the user's share of the total supply of stETH tokens.",
+	"cmcId": "12409",
+	"tags": [
+		"token",
+		"wstETH"
+	],
+	"links": [
+		{
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://holesky.etherscan.io/address/0x8d09a4502cc8cf1547ad300e066060d043f6982d"
+		},
+		{
+			"type": "website",
+			"name": "Website",
+			"url": "https://lido.fi/ethereum"
+		},
+		{
+			"type": "docs",
+			"name": "Lido docs",
+			"url": "https://docs.lido.fi/"
+		},
+		{
+			"type": "example",
+			"name": "wstETH rollup bridging guide",
+			"url": "https://docs.lido.fi/token-guides/wsteth-bridging-guide"
+		}
+	]
+}

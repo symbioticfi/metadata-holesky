@@ -1,0 +1,30 @@
+{
+	"name": "stETH",
+	"tags": [
+		"vault",
+		"legacy",
+		"token:stETH"
+	],
+	"links": [
+		{
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://holesky.etherscan.io/address/0x49502187fcd748818a9d06f29765d0c105facc33"
+		},
+		{
+			"type": "website",
+			"name": "Website",
+			"url": "https://lido.fi/ethereum"
+		},
+		{
+			"type": "docs",
+			"name": "Lido docs",
+			"url": "https://docs.lido.fi/"
+		},
+		{
+			"type": "example",
+			"name": "stETH superuser functions",
+			"url": "https://docs.lido.fi/token-guides/steth-superuser-functions"
+		}
+	]
+}

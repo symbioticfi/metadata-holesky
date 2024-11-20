@@ -1,0 +1,31 @@
+{
+	"name": "rETH",
+	"description": "When depositing ETH into the Rocket Pool smart contracts, you will be instantly issued a token called rETH which represents a tokenised staking deposit in the network. Its value and the rewards it gains over time will be reflected by the work each individual decentralised node operator gives the Rocket Pool network. ",
+	"cmcId": "15060",
+	"tags": [
+		"token",
+		"rETH"
+	],
+	"links": [
+		{
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://holesky.etherscan.io/address/0x7322c24752f79c05ffd1e2a6fcb97020c1c264f1"
+		},
+		{
+			"type": "website",
+			"name": "https://google.com",
+			"url": "everything will be found"
+		},
+		{
+			"type": "docs",
+			"name": "Rocket Pool ETH Documentation",
+			"url": "https://docs.rocketpool.net/overview/"
+		},
+		{
+			"type": "example",
+			"name": "Guides Overview",
+			"url": "https://docs.rocketpool.net/guides/"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"name": "rETH",
+	"tags": [
+		"vault",
+		"legacy",
+		"token:rETH"
+	],
+	"links": [
+		{
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://holesky.etherscan.io/address/0x6429e49c46a2f4a1f7c81719f91a0fd5e0377ca1"
+		},
+		{
+			"type": "docs",
+			"name": "Rocket Pool ETH Documentation",
+			"url": "https://docs.rocketpool.net/overview/"
+		},
+		{
+			"type": "example",
+			"name": "Guides Overview",
+			"url": "https://docs.rocketpool.net/guides/"
+		}
+	]
+}
