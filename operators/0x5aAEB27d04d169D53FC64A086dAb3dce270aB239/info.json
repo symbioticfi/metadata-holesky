@@ -1,6 +1,6 @@
 {
-	"name": "operator name 15",
-	"description": "operator description 15",
+	"name": "Stakin",
+	"description": "Leading institutional-grade web3 infrastructure and non-custodial staking service provider. ISO27001 Certified and Audited.",
 	"tags": [
 		"operator"
 	],
@@ -8,17 +8,27 @@
 		{
 			"type": "website",
 			"name": "Website",
-			"url": "https://google.com"
+			"url": "https://stakin.com"
 		},
 		{
 			"type": "website",
 			"name": "X",
-			"url": "http://twitter.com/"
+			"url": "https://x.com/StakinOfficial"
 		},
 		{
 			"type": "website",
-			"name": "Twitch",
-			"url": "https://www.twitch.tv/"
-		}
+			"name": "Telegram",
+			"url": "https://t.me/StakinOfficial"
+		},
+		{
+                        "type": "website",
+                        "name": "Medium",
+                        "url": "https://medium.com/stakin"
+                },
+		{
+                        "type": "website",
+                        "name": "LinkedIn",
+                        "url": "https://www.linkedin.com/company/stakin"
+                }
 	]
 }
