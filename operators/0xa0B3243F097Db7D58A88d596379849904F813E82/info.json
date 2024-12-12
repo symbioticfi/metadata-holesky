@@ -1,6 +1,6 @@
 {
-	"name": "operator name 26",
-	"description": "operator description 26",
+	"name": "Finoa Consensus Services",
+	"description": "By using the services of Finoa Consensus Services GmbH, the client accepts the General Terms and Conditions of Finoa Consensus Services GmbH. For clarification, reference is made to Section 2.4: The Validator is not an asset manager or investment advisor for the Client. https://www.finoa.io/fcs-terms-and-conditions/",
 	"tags": [
 		"operator"
 	],
@@ -8,17 +8,12 @@
 		{
 			"type": "website",
 			"name": "Website",
-			"url": "https://google.com"
+			"url": "https://www.finoa.io/staking-delegation"
 		},
 		{
 			"type": "website",
 			"name": "X",
-			"url": "http://twitter.com/"
-		},
-		{
-			"type": "website",
-			"name": "Twitch",
-			"url": "https://www.twitch.tv/"
+			"url": "https://x.com/FinoaConsensus"
 		}
 	]
 }
