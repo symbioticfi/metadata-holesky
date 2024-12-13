@@ -1,6 +1,6 @@
 {
-	"name": "operator name 13",
-	"description": "operator description 13",
+	"name": "HashKey Cloud",
+	"description": "HashKey Cloud, as a leading provider of global Web3 infrastructure and a core member of the HashKey Group, focuses on delivering professional, stable, and secure blockchain services to clients worldwide. Since 2018, we have been deeply committed to blockchain infrastructure technologies, with our node validation services covering over 80 mainstream public chains and continuous exploration into Ethereum Layer2 and Bitcoin Lightning Network technologies.",
 	"tags": [
 		"operator"
 	],
@@ -8,17 +8,12 @@
 		{
 			"type": "website",
 			"name": "Website",
-			"url": "https://google.com"
+			"url": "https://www.hashkey.cloud/"
 		},
 		{
 			"type": "website",
 			"name": "X",
-			"url": "http://twitter.com/"
-		},
-		{
-			"type": "website",
-			"name": "Twitch",
-			"url": "https://www.twitch.tv/"
+			"url": "https://x.com/HashKeyCloud"
 		}
 	]
 }
