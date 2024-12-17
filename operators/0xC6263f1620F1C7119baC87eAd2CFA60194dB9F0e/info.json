@@ -1,6 +1,6 @@
 {
-	"name": "operator name 31",
-	"description": "operator description 31",
+	"name": "A41",
+	"description": "A41 is an institutional-grade validator located in APAC supporting over 18+ chains. Currently managing over 3+ billion staked assets, we ensure a thorough evaluation of each Network and manage all potential risks before enabling slashing.",
 	"tags": [
 		"operator"
 	],
@@ -8,17 +8,17 @@
 		{
 			"type": "website",
 			"name": "Website",
-			"url": "https://google.com"
+			"url": "https://www.a41.io"
 		},
 		{
 			"type": "website",
 			"name": "X",
-			"url": "http://twitter.com/"
+			"url": "https://x.com/a41_allforone"
 		},
 		{
-			"type": "website",
-			"name": "Twitch",
-			"url": "https://www.twitch.tv/"
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://holesky.etherscan.io/address/0xC6263f1620F1C7119baC87eAd2CFA60194dB9F0e"
 		}
 	]
 }
