@@ -1,0 +1,32 @@
+name: Validate Pull Request
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+
+    - name: Install dependencies
+      run: npm install tsx @actions/core @actions/github
+
+    - name: Validate file structure
+      run: npx tsx .github/workflows/scripts/validate-fs.ts
+
+    - name: Validate metadata
+      run: npx tsx .github/workflows/scripts/validate-metadata.ts
+
+    - name: Validate logo
+      run: npx tsx .github/workflows/scripts/validate-logo.ts
