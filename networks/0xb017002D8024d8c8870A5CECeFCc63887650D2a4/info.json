@@ -1,22 +1,22 @@
 {
-  "name": "network name 14",
-  "description": "network description 14",
-  "tags": ["network"],
+  "name": "bolt",
+  "description": "bolt allows Ethereum validators to issue credible commitments about their blocks, earning additional rewards for doing so. In its first version, bolt enables inclusion preconfirmations backed by restaked collateral.",
+  "tags": ["network", "preconf", "commitments", "block-production"],
   "links": [
     {
       "type": "website",
       "name": "Website",
-      "url": "https://google.com"
+      "url": "https://boltprotocol.xyz"
     },
     {
       "type": "website",
       "name": "X",
-      "url": "http://twitter.com/"
+      "url": "http://x.com/boltprotocol_"
     },
     {
       "type": "website",
-      "name": "Twitch",
-      "url": "https://www.twitch.tv/"
+      "name": "Github",
+      "url": "https://github.com/chainbound/bolt"
     }
   ]
 }
