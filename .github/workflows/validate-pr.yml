@@ -22,11 +22,19 @@ jobs:
     - name: Install dependencies
       run: npm install tsx @actions/core @actions/github
 
+    - name: Detect changed files
+      uses: yumemi-inc/changed-files@v3
+      id: changes
+      with:
+        format: 'json'
+
     - name: Validate file structure
-      run: npx tsx .github/workflows/scripts/validate-fs.ts
+      run: npx tsx .github/workflows/scripts/validate-fs.ts ${{ steps.changes.outputs.files }}
+      id: files
 
     - name: Validate metadata
-      run: npx tsx .github/workflows/scripts/validate-metadata.ts
+      run: npx tsx .github/workflows/scripts/validate-metadata.ts ${{ steps.files.outputs.metadata }}
 
     - name: Validate logo
-      run: npx tsx .github/workflows/scripts/validate-logo.ts
+      if: steps.files.outputs.logo
+      run: npx tsx .github/workflows/scripts/validate-logo.ts ${{ steps.files.outputs.logo }}
