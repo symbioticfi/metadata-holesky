@@ -1,5 +1,3 @@
-import { error } from '@actions/core';
+const logoPath = process.argv[2];
 
-console.log('Args', process.argv);
-
-error('Validate logo');
+console.log('Logo path:', logoPath);

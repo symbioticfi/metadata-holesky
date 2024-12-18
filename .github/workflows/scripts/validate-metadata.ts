@@ -1,5 +1,3 @@
-import { warning } from '@actions/core';
+const metadataPath = process.argv[2];
 
-console.log('Args', process.argv);
-
-warning('Validate JSON files');
+console.log('Metadata path:', metadataPath);
