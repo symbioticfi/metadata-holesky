@@ -28,3 +28,10 @@ export const invalidInfoJson = (errors: string[]) =>
   **Errors:**
   ${errors.filter(Boolean).map((error) => `- ${error}`).join('\n')}
 `;
+
+export const invalidLogo = (errors: string[]) =>
+  `The logo image is invalid. ${contributionGuidelines}
+
+  **Errors:**
+  ${errors.filter(Boolean).map((error) => `- ${error}`).join('\n')}
+`;
