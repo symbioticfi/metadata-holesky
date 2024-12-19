@@ -1,19 +1,21 @@
+const contributionGuidelines = `Please, follow the [contribution guidelines](/README.md).`;
+
 export const notAllowedChanges = (files: string[]) =>
-  `We detected changes in the pull request that are not allowed. Please, follow the [contribution guidelines](/README.md).
+  `We detected changes in the pull request that are not allowed. ${contributionGuidelines}
 
   **Not allowed changes:**
   ${files.map((file) => `- ${file}`).join('\n')}
 `;
 
 export const onlyOneEntityPerPr = (dirs: string[]) =>
-  `It is not allowed to change more than one entity in a single pull request. Please, follow the [contribution guidelines](/README.md).
+  `It is not allowed to change more than one entity in a single pull request. ${contributionGuidelines}
 
   **Changed entities:**
   ${dirs.map((file) => `- ${file}`).join('\n')}
 `;
 
 export const invalidStructure = (entityDir: string, files: string[]) =>
-  `The sctucture of the entity folder is invalid. Please, follow the [contribution guidelines](/README.md).
+  `The sctucture of the entity folder is invalid. ${contributionGuidelines}
 
   **Current structure:**
   - ${entityDir}
@@ -21,8 +23,8 @@ export const invalidStructure = (entityDir: string, files: string[]) =>
 `;
 
 export const invalidInfoJson = (errors: string[]) =>
-  `The info.json file is invalid. Please, follow the [contribution guidelines](/README.md).
+  `The info.json file is invalid. ${contributionGuidelines}
 
   **Errors:**
-  ${errors.map((error) => `- ${error}`).join('\n')}
+  ${errors.filter(Boolean).map((error) => `- ${error}`).join('\n')}
 `;
