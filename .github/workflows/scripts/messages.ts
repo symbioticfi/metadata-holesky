@@ -19,3 +19,10 @@ export const invalidStructure = (entityDir: string, files: string[]) =>
   - ${entityDir}
     ${files.map((file) => `- ${file}`).join('\n')}
 `;
+
+export const invalidInfoJson = (errors: string[]) =>
+  `The info.json file is invalid. Please, follow the [contribution guidelines](/README.md).
+
+  **Errors:**
+  ${errors.map((error) => `- ${error}`).join('\n')}
+`;

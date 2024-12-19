@@ -23,7 +23,7 @@ jobs:
         node-version: '22'
 
     - name: Install dependencies
-      run: npm install tsx @actions/core @actions/github
+      run: npm install tsx sharp ajv @actions/core @actions/github
 
     - name: Detect changed files
       uses: yumemi-inc/changed-files@v3
@@ -32,8 +32,9 @@ jobs:
     - name: Validate file structure
       run: npx tsx .github/workflows/scripts/validate-fs.ts ${{ steps.changes.outputs.files }}
       id: files
-
+      
     - name: Validate metadata
+      if: steps.files.outputs.metadata
       run: npx tsx .github/workflows/scripts/validate-metadata.ts ${{ steps.files.outputs.metadata }}
 
     - name: Validate logo
