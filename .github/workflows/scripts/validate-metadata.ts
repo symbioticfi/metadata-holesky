@@ -1,1 +1,3 @@
-console.log('Validate JSON files');
+const metadataPath = process.argv[2];
+
+console.log('Metadata path:', metadataPath);
