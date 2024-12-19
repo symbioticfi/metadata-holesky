@@ -25,11 +25,9 @@ jobs:
     - name: Detect changed files
       uses: yumemi-inc/changed-files@v3
       id: changes
-      with:
-        format: 'json'
 
     - name: Validate file structure
-      run: npx tsx .github/workflows/scripts/validate-fs.ts '${{ steps.changes.outputs.files }}'
+      run: npx tsx .github/workflows/scripts/validate-fs.ts ${{ steps.changes.outputs.files }}
       id: files
 
     - name: Validate metadata
