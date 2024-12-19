@@ -1,16 +1,16 @@
-const contributionGuidelines = `Please, follow the [contribution guidelines](/README.md).`;
+const contributionGuidelines = `Please, follow the [contribution guidelines](../../../../README.md).`;
 
 export const notAllowedChanges = (files: string[]) =>
   `We detected changes in the pull request that are not allowed. ${contributionGuidelines}
 
-  **Not allowed changes:**
+  **Not allowed files:**
   ${files.map((file) => `- ${file}`).join('\n')}
 `;
 
 export const onlyOneEntityPerPr = (dirs: string[]) =>
   `It is not allowed to change more than one entity in a single pull request. ${contributionGuidelines}
 
-  **Changed entities:**
+  **Entities:**
   ${dirs.map((file) => `- ${file}`).join('\n')}
 `;
 
