@@ -20,7 +20,7 @@ const normalizeErrors = (error: ErrorObject, lineMap: any) => {
   const capMessage =  message && message.charAt(0).toUpperCase() + message.slice(1);
 
   return {
-    line,
+    line: line + 1,
     message: `${capMessage}${allowedValues}`,
   };
 };
