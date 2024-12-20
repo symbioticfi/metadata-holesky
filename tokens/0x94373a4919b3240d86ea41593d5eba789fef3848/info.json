@@ -1,0 +1,26 @@
+{
+	"name": "WETH",
+	"description": "Wrapped ETH",
+	"cmcId": "2396",
+	"tags": [
+		"token",
+		"WETH"
+	],
+	"links": [
+		{
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://etherscan.io/token/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+		},
+		{
+			"type": "website",
+			"name": "Website",
+			"url": "https://www.weth.io/"
+		},
+		{
+			"type": "docs",
+			"name": "WETH Documentation",
+			"url": "https://www.weth.io/docs"
+		}
+	]
+}
