@@ -29,7 +29,10 @@ github.run(async () => {
   const errors = ajv.errors?.map(normalizeErrors).filter(Boolean) || [];
   
   if (errors.length) {
-    await github.addComment(messages.invalidInfoJson(errors));
+    await github.addReview({
+      body: messages.invalidInfoJson(errors),
+      comments: errors.map((body) => ({ path: metadataPath, body })),
+    });
 
     throw new Error('The `info.json` file is invalid');
   }

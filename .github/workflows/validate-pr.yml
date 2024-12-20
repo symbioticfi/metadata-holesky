@@ -3,8 +3,6 @@ name: Validate Pull Request
 on:
   workflow_dispatch:
   pull_request:
-    branches:
-      - main
 
 jobs:
   validate-pr:
