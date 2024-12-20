@@ -22,8 +22,12 @@ export const onlyOneEntityPerPr = (dirs: string[]) =>
 export const noInfoJson = (entityDir: string, files: string[]) =>
   `The entity folder should have \`info.json\` file. ${contributionGuidelines}`;
 
-export const invalidInfoJson = (erros: JSONSchemaError[]) =>
+export const invalidInfoJson = (path: string, erros: JSONSchemaError[]) =>
   `The \`info.json\` file is invalid. ${contributionGuidelines}`;
 
-export const invalidLogo = (errors: string[]) =>
-  `The logo image is invalid. ${contributionGuidelines}`;
+export const invalidLogo = (path: string, errors: string[]) =>
+  `The logo image is invalid. ${contributionGuidelines}
+
+  **Unmet requirements:**
+  ${errors.map((error) => `- ${error}`).join('\n')}
+`;

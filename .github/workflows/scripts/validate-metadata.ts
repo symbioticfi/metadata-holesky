@@ -36,7 +36,7 @@ github.run(async () => {
 
   if (errors.length) {
     await github.addReview({
-      body: messages.invalidInfoJson(errors),
+      body: messages.invalidInfoJson(metadataPath, errors),
       comments: errors.map(({ message, line }) => ({
         line,
         path: metadataPath,

@@ -12,7 +12,7 @@ github.run(async () => {
   const errors: string[] = [];
   const { size } = await fs.stat(logoPath);
   const { hasAlpha, width = 0, height = 0, format } = await image.metadata();
-
+  
   if (format !== 'png') {
     errors.push('The image format should be PNG');
   }
@@ -30,16 +30,7 @@ github.run(async () => {
   }
 
   if (errors.length) {
-    await github.addReview({
-      body: messages.invalidLogo(errors),
-      comments: [
-        {
-          line: 0,
-          body: errors.map((error) => `- ${error}`).join('\n'),
-          path: logoPath,
-        },
-      ],
-    });
+    await github.addComment(messages.invalidLogo(logoPath, errors));
 
     throw new Error('The logo is invalid');
   }
