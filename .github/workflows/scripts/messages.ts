@@ -26,11 +26,4 @@ export const invalidInfoJson = (erros: JSONSchemaError[]) =>
   `The \`info.json\` file is invalid. ${contributionGuidelines}`;
 
 export const invalidLogo = (errors: string[]) =>
-  `The logo image is invalid. ${contributionGuidelines}
-
-  **Errors:**
-  ${errors
-    .filter(Boolean)
-    .map((error) => `- ${error}`)
-    .join('\n')}
-`;
+  `The logo image is invalid. ${contributionGuidelines}`;

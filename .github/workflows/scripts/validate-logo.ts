@@ -4,15 +4,15 @@ import * as fs from 'fs/promises';
 import * as github from './github';
 import * as messages from './messages';
 
-const [metadataPath] = process.argv.slice(2);
+const [logoPath] = process.argv.slice(2);
 
 github.run(async () => {
-  const image = sharp(metadataPath);
+  const image = sharp(logoPath);
 
   const errors: string[] = [];
-  const { size } = await fs.stat(metadataPath);
+  const { size } = await fs.stat(logoPath);
   const { hasAlpha, width = 0, height = 0, format } = await image.metadata();
-  
+
   if (format !== 'png') {
     errors.push('The image format should be PNG');
   }
@@ -30,7 +30,16 @@ github.run(async () => {
   }
 
   if (errors.length) {
-    await github.addComment(messages.invalidLogo(errors));
+    await github.addReview({
+      body: messages.invalidLogo(errors),
+      comments: [
+        {
+          line: 0,
+          body: errors.map((error) => `- ${error}`).join('\n'),
+          path: logoPath,
+        },
+      ],
+    });
 
     throw new Error('The logo is invalid');
   }
