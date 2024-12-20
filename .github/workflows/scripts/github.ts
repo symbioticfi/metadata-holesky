@@ -14,6 +14,7 @@ export type ReviewComment = {
   path: string;
   body: string;
   line?: number;
+  position?: number;
 }
 
 export type Review = {
