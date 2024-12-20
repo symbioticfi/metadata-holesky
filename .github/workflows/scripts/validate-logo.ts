@@ -30,7 +30,7 @@ github.run(async () => {
   }
 
   if (errors.length) {
-    await github.addComment(messages.invalidInfoJson(errors));
+    await github.addComment(messages.invalidLogo(errors));
 
     throw new Error('The logo is invalid');
   }

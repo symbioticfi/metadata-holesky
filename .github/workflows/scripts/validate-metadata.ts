@@ -2,6 +2,7 @@ import * as fs from 'fs/promises';
 import * as path from 'path';
 import { Ajv, ErrorObject } from 'ajv';
 import addFormats from 'ajv-formats';
+import { parse } from 'json-source-map';
 
 import * as github from './github';
 import * as messages from './messages';
@@ -12,28 +13,34 @@ const ajv = new Ajv({ allErrors: true });
 
 addFormats(ajv);
 
-const normalizeErrors = (error: ErrorObject) => {
+const normalizeErrors = (error: ErrorObject, lineMap: any) => {
   const { instancePath, message, params } = error;
   const allowedValues = params?.allowedValues ? `: ${params.allowedValues.join(', ')}` : '';
+  const line = lineMap[instancePath]?.value?.line || 1;
+  const capMessage =  message && message.charAt(0).toUpperCase() + message.slice(1);
 
-  return `**${instancePath}**: ${message}${allowedValues}`;
+  return {
+    line,
+    message: `${capMessage}${allowedValues}`,
+  };
 };
 
 github.run(async () => {
-  const metadata = JSON.parse(await fs.readFile(metadataPath, 'utf8'));
+  const metadataContent = await fs.readFile(metadataPath, 'utf8');
+  const { data: metadata, pointers: lineMap } = parse(metadataContent);
   const schema = JSON.parse(await fs.readFile(schemaPath, 'utf8'));
 
   ajv.validate(schema, metadata);
 
-  const errors = ajv.errors?.map(normalizeErrors).filter(Boolean) || [];
+  const errors = ajv.errors?.map((error) => normalizeErrors(error, lineMap)).filter(Boolean) || [];
 
   if (errors.length) {
     await github.addReview({
-      body: messages.invalidInfoJson(errors),
-      comments: errors.map((body) => ({
-        line: 1,
+      body: messages.invalidInfoJson(),
+      comments: errors.map(({ message, line }) => ({
+        line,
         path: metadataPath,
-        body,
+        body: message,
       })),
     });
 

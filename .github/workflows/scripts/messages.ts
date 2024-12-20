@@ -22,7 +22,7 @@ export const invalidStructure = (entityDir: string, files: string[]) =>
     ${files.map((file) => `- ${file}`).join('\n')}
 `;
 
-export const invalidInfoJson = (errors: string[]) =>
+export const invalidInfoJson = () =>
   `The info.json file is invalid. ${contributionGuidelines}`;
 
 export const invalidLogo = (errors: string[]) =>

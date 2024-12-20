@@ -21,7 +21,7 @@ jobs:
         node-version: '22'
 
     - name: Install dependencies
-      run: npm install tsx @actions/core @actions/github sharp ajv ajv-formats
+      run: npm install tsx @actions/core @actions/github sharp ajv ajv-formats json-source-map
 
     - name: Detect changed files
       uses: yumemi-inc/changed-files@v3
