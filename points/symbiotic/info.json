@@ -1,6 +1,7 @@
 {
 	"type": "network",
 	"name": "Symbiotic points",
+	"decimals": 18,
 	"description": "Symbiotic points are the native points of the Symbiotic ecosystem.",
 	"tags": [
 		"symbiotic",
