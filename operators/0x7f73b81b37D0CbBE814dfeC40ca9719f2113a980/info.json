@@ -1,6 +1,6 @@
 {
-	"name": "operator name 22",
-	"description": "operator description 22",
+	"name": "P2P.org",
+	"description": "We are a P2P.org service that provides secure, non-custodial staking services for professional investors. We allow token holders to participate in staking without the heavy lifting of running a node.",
 	"tags": [
 		"operator"
 	],
@@ -8,17 +8,27 @@
 		{
 			"type": "website",
 			"name": "Website",
-			"url": "https://google.com"
+			"url": "https://p2p.org/"
 		},
 		{
 			"type": "website",
 			"name": "X",
-			"url": "http://twitter.com/"
+			"url": "https://x.com/P2Pvalidator"
 		},
 		{
 			"type": "website",
-			"name": "Twitch",
-			"url": "https://www.twitch.tv/"
+			"name": "Telegram",
+			"url": "https://t.me/P2Pstaking"
+		},
+		{
+			"type": "website",
+			"name": "YouTube",
+			"url": "https://www.youtube.com/channel/UC9pRzyJx5YrUNfmg1vLZ-bQ/featured"
+		},
+		{
+			"type": "website",
+			"name": "LinkedIn",
+			"url": "https://www.linkedin.com/company/p2p-org/"
 		}
 	]
 }
