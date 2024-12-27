@@ -1,7 +1,7 @@
 {
 	"type": "network",
 	"name": "Symbiotic points",
-	"decimals": 18,
+	"decimals": 48,
 	"description": "Symbiotic points are the native points of the Symbiotic ecosystem.",
 	"tags": [
 		"symbiotic",
@@ -14,8 +14,18 @@
 			"url": "https://symbiotic.fi/"
 		},
 		{
+			"type": "social",
+			"name": "Github",
+			"url": "https://github.com/symbioticfi"
+		},
+		{
+			"type": "social",
+			"name": "Twitter",
+			"url": "https://x.com/symbioticfi"
+		},
+		{
 			"type": "docs",
-			"name": "Lido docs",
+			"name": "Documentation",
 			"url": "https://docs.symbiotic.fi/"
 		}
 	]
