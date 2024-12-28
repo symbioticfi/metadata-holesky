@@ -1,0 +1,19 @@
+{
+	"name": "Kiln",
+	"description": "Democratising value creation in digital assets",
+	"tags": [
+		"operator"
+	],
+	"links": [
+		{
+			"type": "website",
+			"name": "Website",
+			"url": "https://www.kiln.fi/"
+		},
+		{
+			"type": "website",
+			"name": "X",
+			"url": "https://x.com/Kiln_finance"
+		}
+	]
+}
