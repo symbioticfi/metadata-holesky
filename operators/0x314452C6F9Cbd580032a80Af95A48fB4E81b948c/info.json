@@ -1,6 +1,6 @@
 {
-	"name": "operator name 5",
-	"description": "operator description 5",
+	"name": "Encapsulate",
+	"description": "Others trust, we validate! Your stake is important to us. Help us secure networks while you earn rewards",
 	"tags": [
 		"operator"
 	],
@@ -8,17 +8,22 @@
 		{
 			"type": "website",
 			"name": "Website",
-			"url": "https://google.com"
+			"url": "https://encapsulate.xyz/"
 		},
 		{
 			"type": "website",
 			"name": "X",
-			"url": "http://twitter.com/"
+			"url": "https://x.com/encapsulate_xyz"
 		},
 		{
 			"type": "website",
-			"name": "Twitch",
-			"url": "https://www.twitch.tv/"
+			"name": "Discord",
+			"url": "https://discord.com/invite/S5x4e2AHVV"
+		},
+		{
+			"type": "website",
+			"name": "Github",
+			"url": "https://github.com/encapsulate-xyz"
 		}
 	]
 }
