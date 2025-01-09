@@ -6,8 +6,3 @@
 .env
 .env.test
 bin/
-
-# DO NOT COMMIT
-node_modules/
-package-lock.json
-package.json
