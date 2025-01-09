@@ -1,26 +1,30 @@
 {
-  "name": "wstETH",
-  "tags": ["vault", "legacy", "token:wstETH"],
-  "links": [
-    {
-      "type": "explorer",
-      "name": "Etherscan",
-      "url": "https://holesky.etherscan.io/address/0x6aba831a98e9aaede9ea5b2dfb0ccb9e843bac13"
-    },
-    {
-      "type": "website",
-      "name": "Website",
-      "url": "https://lido.fi/ethereum"
-    },
-    {
-      "type": "docs",
-      "name": "Lido docs",
-      "url": "https://docs.lido.fi/"
-    },
-    {
-      "type": "example",
-      "name": "wstETH rollup bridging guide",
-      "url": "https://docs.lido.fi/token-guides/wsteth-bridging-guide"
-    }
-  ]
+	"name": "wstETH",
+	"tags": [
+		"vault",
+		"legacy",
+		"token:wstETH"
+	],
+	"links": [
+		{
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://holesky.etherscan.io/address/0x6aba831a98e9aaede9ea5b2dfb0ccb9e843bac13"
+		},
+		{
+			"type": "website",
+			"name": "Website",
+			"url": "https://lido.fi/ethereum"
+		},
+		{
+			"type": "docs",
+			"name": "Lido docs",
+			"url": "https://docs.lido.fi/"
+		},
+		{
+			"type": "example",
+			"name": "wstETH rollup bridging guide",
+			"url": "https://docs.lido.fi/token-guides/wsteth-bridging-guide"
+		}
+	]
 }
