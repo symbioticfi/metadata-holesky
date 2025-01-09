@@ -1,0 +1,33 @@
+{
+	"name": "WBTC",
+	"description": "Wrapped Bitcoin (WBTC) is an ERC20 token that represents Bitcoin on the Ethereum blockchain. It allows Bitcoin holders to participate in the Ethereum ecosystem, including DeFi applications.",
+	"cmcId": "3717",
+	"tags": [
+		"token",
+		"WBTC",
+		"wrapped",
+		"bitcoin"
+	],
+	"links": [
+		{
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfed6b7359e8d3a5"
+		},
+		{
+			"type": "website",
+			"name": "WBTC Website",
+			"url": "https://wbtc.network/"
+		},
+		{
+			"type": "docs",
+			"name": "WBTC Documentation",
+			"url": "https://docs.wbtc.network/"
+		},
+		{
+			"type": "example",
+			"name": "Using WBTC",
+			"url": "https://wbtc.network/using-wbtc"
+		}
+	]
+}

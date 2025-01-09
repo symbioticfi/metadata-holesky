@@ -1,0 +1,15 @@
+{
+	"name": "Vault C56B",
+	"description": "A mock vault for testing purposes",
+	"tags": [
+		"vault",
+		"mock"
+	],
+	"links": [
+		{
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://etherscan.io/address/0xc56ba584929c6f381744fa2d7a028fa927817f2b"
+		}
+	]
+}
