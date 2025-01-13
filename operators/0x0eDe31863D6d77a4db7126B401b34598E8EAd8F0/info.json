@@ -1,0 +1,29 @@
+{
+	"name": "IvyNet",
+	"description": "Unified metrics observability platform for restaking node operators that manage their own infrastructure",
+	"tags": [
+		"operator"
+	],
+	"links": [
+		{
+			"type": "website",
+			"name": "IvyNet",
+			"url": "https://ivynet.dev/"
+		},
+		{
+			"type": "docs",
+			"name": "Quickstart Guide",
+			"url": "https://docs.ivynet.dev/docs/client/quickstartguide/"
+		},
+        {
+			"type": "website",
+			"name": "LinkedIn",
+			"url": "https://www.linkedin.com/company/ivynet-dev/"
+		},
+        {
+			"type": "website",
+			"name": "X",
+			"url": "https://x.com/ivynet_dev"
+		}
+	]
+}
