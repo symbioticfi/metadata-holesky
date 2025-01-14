@@ -4,10 +4,13 @@ on:
   workflow_dispatch:
   pull_request:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   validate-pr:
     runs-on: ubuntu-24.04
-    permissions: write-all
 
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
