@@ -22,7 +22,7 @@ jobs:
           node-version: '22'
 
       - name: Install dependencies
-        run: npm install tsx
+        run: npm install tsx @actions/core @actions/github
 
       - name: Generate
         run: npx tsx .github/workflows/scripts/extract-metadata.ts

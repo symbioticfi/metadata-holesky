@@ -1,6 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { pathToFileURL } from 'url';
+import { repoPath } from './github';
 
 type Info = Partial<{
   name: string;
@@ -58,12 +59,11 @@ async function grabEntitiesInfo(globalDirs: DIRECTORIES[]) {
 
           const module = await import(infoUrl);
           const info: Info = module.default;
+          const logoUrl = `https://raw.githubusercontent.com/${repoPath}/main/${entityPath}/logo.png`;
+
           result[dir as DIRECTORIES][subdir] = {
             info,
-            logo:
-              'https://raw.githubusercontent.com/symbioticfi/metadata-holesky/main/' +
-              entityPath +
-              '/logo.png',
+            logo: logoUrl,
           };
         } catch (error) {
           console.error('Error processing entity in ' + entityPath, error);

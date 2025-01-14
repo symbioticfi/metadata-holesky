@@ -1,4 +1,6 @@
-const contributionGuidelines = `Please, follow the [contribution guidelines](https://github.com/symbioticfi/metadata-holesky/blob/main/README.md).`;
+import { repoPath } from './github';
+
+const contributionGuidelines = `Please, follow the [contribution guidelines](https://github.com/${repoPath}/blob/main/README.md).`;
 
 type JSONSchemaError = {
   line: number;
