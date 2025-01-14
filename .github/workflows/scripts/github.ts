@@ -2,9 +2,6 @@ import * as core from '@actions/core';
 import * as github from '@actions/github';
 
 const token = process.env.GITHUB_TOKEN;
-const headers = {
-  'X-GitHub-Api-Version': '2022-11-28',
-};
 
 if (!token) {
   core.setFailed('GITHUB_TOKEN env variable is required');
@@ -28,7 +25,7 @@ export type Review = {
 export const addComment = async (body: string) => {
   const { owner, repo, number } = github.context.issue;
 
-  await octokit.rest.issues.createComment({ owner, repo, issue_number: number, body, headers });
+  await octokit.rest.issues.createComment({ owner, repo, issue_number: number, body });
 };
 
 export const addReview = async (review: Review) => {
@@ -39,7 +36,6 @@ export const addReview = async (review: Review) => {
     repo,
     pull_number: number,
     event: 'COMMENT',
-    headers,
     ...review,
   });
 };

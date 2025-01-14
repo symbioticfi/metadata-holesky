@@ -8,6 +8,9 @@ jobs:
   validate-pr:
     runs-on: ubuntu-24.04
 
+    permissions:
+      pull-requests: write
+
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
