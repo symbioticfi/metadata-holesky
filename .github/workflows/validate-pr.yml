@@ -16,15 +16,14 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        ref: ${{ github.event.pull_request.head.ref }}
-        repository: ${{ github.event.pull_request.head.repo.full_name }}
+        ref: ${{ github.head_ref }}
 
     - name: Detect changed files
       uses: yumemi-inc/changed-files@v3
       id: changes
 
     - name: Validate
-      uses: symbioticfi/metadata-validation-scripts@image-validation
+      uses: symbioticfi/metadata-validation-scripts@main
       with:
         files: ${{ steps.changes.outputs.files }}
         issue: ${{ github.event.number }}
