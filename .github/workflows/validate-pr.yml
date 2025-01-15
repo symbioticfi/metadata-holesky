@@ -36,3 +36,4 @@ jobs:
       uses: symbioticfi/metadata-validation-scripts@image-validation
       with:
         files: ${{ steps.changes.outputs.files }}
+        issue: ${{ github.event.number }}
