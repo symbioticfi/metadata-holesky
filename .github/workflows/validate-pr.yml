@@ -10,8 +10,8 @@ jobs:
   validate-pr:
     runs-on: ubuntu-24.04
 
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    permissions:
+      pull-requests: write
 
     steps:
     - name: Checkout repository
@@ -37,3 +37,4 @@ jobs:
       with:
         files: ${{ steps.changes.outputs.files }}
         issue: ${{ github.event.number }}
+        # token: ${{ secrets.GITHUB_TOKEN }}
