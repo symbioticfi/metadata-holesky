@@ -1,44 +1,31 @@
 name: Validate Pull Request
 
 on:
-  workflow_dispatch:
-  pull_request:
-
-permissions:
-  contents: write
-  pull-requests: write
+  pull_request_target:
+    branches:
+      - main
 
 jobs:
   validate-pr:
     runs-on: ubuntu-24.04
 
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    permissions:
+      pull-requests: write
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '22'
+      - name: Detect changed files
+        uses: yumemi-inc/changed-files@v3
+        id: changes
 
-    - name: Install dependencies
-      run: npm install tsx @actions/core @actions/github sharp ajv ajv-formats json-source-map
-
-    - name: Detect changed files
-      uses: yumemi-inc/changed-files@v3
-      id: changes
-
-    - name: Validate file structure
-      run: npx tsx .github/workflows/scripts/validate-fs.ts ${{ steps.changes.outputs.files }}
-      id: files
-      
-    - name: Validate metadata
-      if: steps.files.outputs.metadata
-      run: npx tsx .github/workflows/scripts/validate-metadata.ts ${{ steps.files.outputs.metadata }}
-
-    - name: Validate logo
-      if: steps.files.outputs.logo
-      run: npx tsx .github/workflows/scripts/validate-logo.ts ${{ steps.files.outputs.logo }}
+      - name: Validate
+        uses: symbioticfi/metadata-validation-scripts@main
+        with:
+          files: ${{ steps.changes.outputs.files }}
+          issue: ${{ github.event.number }}
+          token: ${{ secrets.GITHUB_TOKEN }}
