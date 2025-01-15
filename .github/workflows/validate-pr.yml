@@ -1,15 +1,13 @@
 name: Validate Pull Request
 
 on:
-  workflow_dispatch:
-  pull_request:
+  pull_request_target:
+    branches:
+      - main
 
 jobs:
   validate-pr:
     runs-on: ubuntu-24.04
-
-    permissions:
-      pull-requests: write
 
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -30,14 +28,7 @@ jobs:
       uses: yumemi-inc/changed-files@v3
       id: changes
 
-    - name: Validate file structure
-      run: npx tsx .github/workflows/scripts/validate-fs.ts ${{ steps.changes.outputs.files }}
-      id: files
-      
-    - name: Validate metadata
-      if: steps.files.outputs.metadata
-      run: npx tsx .github/workflows/scripts/validate-metadata.ts ${{ steps.files.outputs.metadata }}
-
-    - name: Validate logo
-      if: steps.files.outputs.logo
-      run: npx tsx .github/workflows/scripts/validate-logo.ts ${{ steps.files.outputs.logo }}
+    - name: Validate
+      uses: symbioticfi/metadata-validation-scripts@image-validation
+      with:
+        files: ${{ steps.changes.outputs.files }}
