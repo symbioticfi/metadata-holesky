@@ -13,20 +13,15 @@ jobs:
     permissions:
       pull-requests: write
 
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
         ref: ${{ github.event.pull_request.head.ref }}
         repository: ${{ github.event.pull_request.head.repo.full_name }}
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '22'
-
-    - name: Install dependencies
-      run: npm install tsx @actions/core @actions/github sharp ajv ajv-formats json-source-map
 
     - name: Detect changed files
       uses: yumemi-inc/changed-files@v3
