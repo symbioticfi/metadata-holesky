@@ -13,9 +13,6 @@ jobs:
     permissions:
       pull-requests: write
 
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -32,4 +29,4 @@ jobs:
       with:
         files: ${{ steps.changes.outputs.files }}
         issue: ${{ github.event.number }}
-        # token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
