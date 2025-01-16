@@ -23,7 +23,7 @@ jobs:
       id: changes
 
     - name: Validate
-      uses: symbioticfi/metadata-validation-scripts@main
+      uses: symbioticfi/metadata-validation-scripts@SYMB-218-on-chain-validations
       with:
         files: ${{ steps.changes.outputs.files }}
         issue: ${{ github.event.number }}
