@@ -8,27 +8,29 @@ on:
 jobs:
   validate-pr:
     runs-on: ubuntu-24.04
-
+    timeout-minutes: 5
     permissions:
       pull-requests: write
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        ref: ${{ github.head_ref }}
 
-    - name: Detect changed files
-      uses: yumemi-inc/changed-files@v3
-      id: changes
+      - name: Detect changed files
+        uses: yumemi-inc/changed-files@v3
+        id: changes
 
-    - name: Validate
-      uses: symbioticfi/metadata-validation-scripts@SYMB-218-contract-address-inputs
-      with:
-        files: ${{ steps.changes.outputs.files }}
-        issue: ${{ github.event.number }}
-        token: ${{ secrets.GITHUB_TOKEN }}
-        chain-id: 17000
-        network-registry: "0x7d03b7343bf8d5cec7c0c27ece084a20113d15c9"
-        operator-registry: "0x6f75a4fff97326a00e52662d82ea4fde86a2c548"
-        vault-registry: "0x407a039d94948484d356efb765b3c74382a050b4"
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+
+      - name: Validate
+        uses: symbioticfi/metadata-validation-scripts@main
+        with:
+          files: ${{ steps.changes.outputs.files }}
+          issue: ${{ github.event.number }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          chain-id: 17000
+          network-registry: "0x7d03b7343bf8d5cec7c0c27ece084a20113d15c9"
+          operator-registry: "0x6f75a4fff97326a00e52662d82ea4fde86a2c548"
+          vault-registry: "0x407a039d94948484d356efb765b3c74382a050b4"
