@@ -1,6 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { pathToFileURL } from 'url';
+import * as github from '@actions/github';
 
 type Info = Partial<{
   name: string;
@@ -28,7 +29,7 @@ type Info = Partial<{
 
 type Entity = {
   info: Info;
-  logo: string;
+  logo?: string;
 };
 
 enum DIRECTORIES {
@@ -42,8 +43,10 @@ enum DIRECTORIES {
 type Template = Record<DIRECTORIES, Record<string, Entity>>;
 
 async function grabEntitiesInfo(globalDirs: DIRECTORIES[]) {
+  const repoPath = [github.context.repo.owner, github.context.repo.repo].join('/');
   const result = Object.values(DIRECTORIES).reduce<Template>((acc, curr) => {
     acc[curr] = {};
+
     return acc;
   }, {} as Template);
 
@@ -54,17 +57,25 @@ async function grabEntitiesInfo(globalDirs: DIRECTORIES[]) {
         const entityPath = path.join(dir, subdir);
         try {
           const infoPath = path.join(entityPath, 'info.json');
-          const infoUrl = pathToFileURL(infoPath).href;
+          const logoPath = path.join(entityPath, 'logo.png');
 
+          const infoUrl = pathToFileURL(infoPath).href;
           const module = await import(infoUrl);
           const info: Info = module.default;
-          result[dir as DIRECTORIES][subdir] = {
-            info,
-            logo:
-              'https://raw.githubusercontent.com/symbioticfi/metadata-holesky/main/' +
-              entityPath +
-              '/logo.png',
-          };
+          const entity: Entity = { info };
+
+          const hasLogo = await fs
+            .stat(logoPath)
+            .then((stats) => stats.isFile())
+            .catch(() => false);
+
+          if (hasLogo) {
+            const logoUrl = `https://raw.githubusercontent.com/${repoPath}/main/${entityPath}/logo.png`;
+
+            entity.logo = logoUrl;
+          }
+
+          result[dir as DIRECTORIES][subdir] = entity;
         } catch (error) {
           console.error('Error processing entity in ' + entityPath, error);
         }
