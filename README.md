@@ -31,14 +31,20 @@ Each entity is identified by its Ethereum address (`0x...`), and its data is sto
 
 ### **Steps to Add a New Entity**
 
-1. **Determine the entity type**: Decide whether the entity belongs to `vaults`, `networks`, `operators`, or `tokens`.
-2. **Create a new folder**: 
+1. **Determine the entity type**: 
+   - Decide whether the entity belongs to `vaults`, `networks`, `operators`, or `tokens`.
+   - If the entity is a `vault`, please be sure that it's collateral token entity is registered in the `tokens` folder before adding the vault metadata. If not, please add the token first.
+2. **Register the entity in the registry**:
+   - Before adding metadata for vaults, networks, or operators, ensure that they are registered in their respective registries. You can find the current registry contract addresses in the [Symbiotic documentation](https://docs.symbiotic.fi/deployments/current). Unregistered entities will not be accepted.
+4. **Create a new folder**:
    - Navigate to the appropriate directory for the entity type.
    - Create a folder named after the Ethereum address (e.g., `0x1234567890abcdef1234567890abcdef12345678`).
-3. **Add the `info.json` file**:
+5. **Add the `info.json` file**:
    - Include metadata in the specified format (see below).
-4. **(Optional) Add an icon file**:
+6. **(Optional) Add an icon file**:
    - If available, include a `logo.png` file with the entity’s logo.
+
+Your PR will be reviewed by the symbiotic team, and if approved, it will be merged into the repository. Please note that the PR will be reviewed only after the entity is checked with automated checks.
 
 ---
 
@@ -52,10 +58,13 @@ The `info.json` file must follow this structure:
 - `tags` (array of strings): Tags categorizing the entity.
 - `links` (array of objects): External links related to the entity.
 
-#### **Optional Fields (for tokens)**
+#### **Optional Fields for Tokens**
 - `cmcId` (string): The CoinMarketCap ID for the token. Used to fetch price of the token in USD.
 - `permitName` (string): The `name` field for EIP-2612 support.
 - `permitVersion` (string): The `version` field for EIP-2612 support.
+
+#### **Optional Fields for Vaults**
+- `curatorName` (string): The `name` of the curator of the vault.
 
 #### **Supported `links` Types**
 Each link should include:
@@ -64,6 +73,7 @@ Each link should include:
   - `explorer`: A blockchain explorer link for the entity's Ethereum address or contract.
   - `docs`: Documentation related to the entity.
   - `example`: Example use cases or tutorials.
+  - `externalLink`: A link to be shown below the entity's name.
 - `name`: A user-friendly name for the link.
 - `url`: The URL of the resource.
 
