@@ -34,3 +34,6 @@ jobs:
           tag_name: latest
           files: full-info.json
           fail_on_unmatched_files: true
+      # Sleep to be sure release is updated in GH CDN before triggering a webhook
+      - name: Sleep for 30 seconds
+        run: sleep 30s
