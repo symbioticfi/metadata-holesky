@@ -17,8 +17,6 @@ jobs:
       - name: Detect changed files
         uses: yumemi-inc/changed-files@v3
         id: changes
-        with:
-          exclude-statuses: 'removed'
 
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,7 +25,6 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
 
       - name: Validate
-        if: steps.changes.outputs.exists == 'true'
         uses: symbioticfi/metadata-validation-scripts@main
         with:
           files: ${{ steps.changes.outputs.files }}
