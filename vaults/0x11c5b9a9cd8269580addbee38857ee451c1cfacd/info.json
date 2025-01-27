@@ -7,6 +7,11 @@
 	],
 	"links": [
 		{
+			"type": "externalLink",
+			"name": "Deposit",
+			"url": "https://etherscan.io/address/0x11c5b9a9cd8269580addbee38857ee451c1cfacd"
+		},
+		{
 			"type": "explorer",
 			"name": "Etherscan",
 			"url": "https://etherscan.io/address/0x11c5b9a9cd8269580addbee38857ee451c1cfacd"
