@@ -24,6 +24,13 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
 
+      - name: Checkout upstream
+        uses: actions/checkout@v4
+        with:
+          path: upstream
+          ref: main
+          repository: ${{ github.event.pull_request.base.repo.full_name }}
+
       - name: Validate
         uses: symbioticfi/metadata-validation-scripts@main
         with:
@@ -31,6 +38,7 @@ jobs:
           issue: ${{ github.event.number }}
           token: ${{ secrets.GITHUB_TOKEN }}
           chain-id: 17000
+          upstream-checkout-path: upstream
           network-registry: "0x7d03b7343bf8d5cec7c0c27ece084a20113d15c9"
           operator-registry: "0x6f75a4fff97326a00e52662d82ea4fde86a2c548"
           vault-registry: "0x407a039d94948484d356efb765b3c74382a050b4"
