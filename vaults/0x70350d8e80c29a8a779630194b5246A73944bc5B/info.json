@@ -1,0 +1,16 @@
+{
+  "name": "WETH",
+  "description": "legacy WETH vault",
+  "tags": [
+    "vault",
+    "token:WETH",
+    "legacy"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0x70350d8e80c29a8a779630194b5246A73944bc5B"
+    }
+  ]
+}

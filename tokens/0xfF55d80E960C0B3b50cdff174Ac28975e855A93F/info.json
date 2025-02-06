@@ -1,0 +1,15 @@
+{
+  "name": "tBTC",
+  "description": "tBTC token",
+  "tags": [
+    "token",
+    "tBTC"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0xfF55d80E960C0B3b50cdff174Ac28975e855A93F"
+    }
+  ]
+}

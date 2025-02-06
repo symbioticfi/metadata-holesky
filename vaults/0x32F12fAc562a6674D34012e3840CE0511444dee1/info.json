@@ -1,0 +1,16 @@
+{
+  "name": "USDC",
+  "description": "legacy USDC vault",
+  "tags": [
+    "vault",
+    "token:USDC",
+    "legacy"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0x32F12fAc562a6674D34012e3840CE0511444dee1"
+    }
+  ]
+}

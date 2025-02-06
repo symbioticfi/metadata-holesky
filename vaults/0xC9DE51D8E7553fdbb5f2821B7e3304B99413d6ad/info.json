@@ -1,0 +1,16 @@
+{
+  "name": "tBTC",
+  "description": "legacy tBTC vault",
+  "tags": [
+    "vault",
+    "token:tBTC",
+    "legacy"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0xC9DE51D8E7553fdbb5f2821B7e3304B99413d6ad"
+    }
+  ]
+}

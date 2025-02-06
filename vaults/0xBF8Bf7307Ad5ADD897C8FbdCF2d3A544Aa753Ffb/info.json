@@ -1,0 +1,16 @@
+{
+  "name": "A",
+  "description": "legacy A vault",
+  "tags": [
+    "vault",
+    "token:A",
+    "legacy"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0xBF8Bf7307Ad5ADD897C8FbdCF2d3A544Aa753Ffb"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "B",
+  "description": "B token",
+  "tags": [
+    "token",
+    "B"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0xB0a03A0c113D0DC939B1887aff29a18BF6fC8714"
+    }
+  ]
+}
