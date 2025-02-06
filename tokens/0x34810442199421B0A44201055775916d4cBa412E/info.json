@@ -1,0 +1,15 @@
+{
+  "name": "weETH",
+  "description": "weETH token",
+  "tags": [
+    "token",
+    "weETH"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0x34810442199421B0A44201055775916d4cBa412E"
+    }
+  ]
+}
