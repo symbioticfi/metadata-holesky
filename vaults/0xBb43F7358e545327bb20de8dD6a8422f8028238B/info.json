@@ -1,0 +1,16 @@
+{
+  "name": "ALTINU",
+  "description": "legacy ALTINU vault",
+  "tags": [
+    "vault",
+    "token:ALTINU",
+    "legacy"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0xBb43F7358e545327bb20de8dD6a8422f8028238B"
+    }
+  ]
+}

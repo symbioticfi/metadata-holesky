@@ -1,0 +1,16 @@
+{
+  "name": "HETH",
+  "description": "legacy HETH vault",
+  "tags": [
+    "vault",
+    "token:HETH",
+    "legacy"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0x2f82135c63E7e7c8189bbBA0f7D1DFC01e1B9427"
+    }
+  ]
+}

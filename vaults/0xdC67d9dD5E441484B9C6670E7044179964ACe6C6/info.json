@@ -1,0 +1,16 @@
+{
+  "name": "B",
+  "description": "legacy B vault",
+  "tags": [
+    "vault",
+    "token:B",
+    "legacy"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0xdC67d9dD5E441484B9C6670E7044179964ACe6C6"
+    }
+  ]
+}

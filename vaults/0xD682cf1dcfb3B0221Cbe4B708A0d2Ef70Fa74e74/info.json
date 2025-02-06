@@ -1,0 +1,16 @@
+{
+  "name": "wBTC",
+  "description": "legacy wBTC vault",
+  "tags": [
+    "vault",
+    "token:wBTC",
+    "legacy"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0xD682cf1dcfb3B0221Cbe4B708A0d2Ef70Fa74e74"
+    }
+  ]
+}

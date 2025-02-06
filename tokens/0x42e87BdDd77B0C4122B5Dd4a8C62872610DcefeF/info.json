@@ -1,0 +1,15 @@
+{
+  "name": "USDC",
+  "description": "USDC token",
+  "tags": [
+    "token",
+    "USDC"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0x42e87BdDd77B0C4122B5Dd4a8C62872610DcefeF"
+    }
+  ]
+}
