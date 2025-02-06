@@ -1,0 +1,15 @@
+{
+  "name": "ALTINU",
+  "description": "legacy ALTINU token",
+  "tags": [
+    "token",
+    "ALTINU"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0x4Bd30dAf919a3f74ec57f0557716Bcc660251Ec0"
+    }
+  ]
+}

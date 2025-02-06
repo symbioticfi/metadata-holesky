@@ -1,0 +1,15 @@
+{
+  "name": "ankrETH",
+  "description": "legacy ankrETH token",
+  "tags": [
+    "token",
+    "ankrETH"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0x8783C9C904e1bdC87d9168AE703c8481E8a477Fd"
+    }
+  ]
+}

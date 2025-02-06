@@ -1,0 +1,15 @@
+{
+  "name": "swell",
+  "description": "legacy swell token",
+  "tags": [
+    "token",
+    "swell"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0xeAffBEF6e95e3e180BE06622436F83B966A21053"
+    }
+  ]
+}

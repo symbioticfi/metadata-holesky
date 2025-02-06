@@ -1,0 +1,16 @@
+{
+  "name": "stSTRK",
+  "description": "legacy stSTRK vault",
+  "tags": [
+    "vault",
+    "token:stSTRK",
+    "legacy"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0xCD1C9e4136B372C16408Be883Ca3A787F2cd0381"
+    }
+  ]
+}

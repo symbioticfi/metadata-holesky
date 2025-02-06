@@ -1,0 +1,15 @@
+{
+  "name": "stSTRK",
+  "description": "legacy stSTRK token",
+  "tags": [
+    "token",
+    "stSTRK"
+  ],
+  "links": [
+    {
+      "type": "explorer",
+      "name": "Etherscan",
+      "url": "https://etherscan.io/address/0xe1323e3d2e269570337fb356BF70Ddfa5dD5Ae36"
+    }
+  ]
+}
