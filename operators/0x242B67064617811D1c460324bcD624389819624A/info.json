@@ -1,6 +1,6 @@
 {
-	"name": "operator name 4",
-	"description": "operator description 4",
+	"name": "StakeCapital",
+	"description": "Stake Capital is a group run by Blockchain and DeFi pioneers standing at the intersection of traditional industries and blockchain technology.",
 	"tags": [
 		"operator"
 	],
@@ -8,17 +8,12 @@
 		{
 			"type": "website",
 			"name": "Website",
-			"url": "https://google.com"
+			"url": "https://stake.capital"
 		},
 		{
 			"type": "website",
 			"name": "X",
-			"url": "http://twitter.com/"
-		},
-		{
-			"type": "website",
-			"name": "Twitch",
-			"url": "https://www.twitch.tv/"
+			"url": "https://twitter.com/StakeCapital"
 		}
 	]
 }
