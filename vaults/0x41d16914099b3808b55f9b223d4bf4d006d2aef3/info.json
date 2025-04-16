@@ -11,5 +11,11 @@
 			"name": "Etherscan",
 			"url": "https://etherscan.io/address/0x41d16914099b3808b55f9b223d4bf4d006d2aef3"
 		}
+	],
+	"rewards": [
+		{
+			"address": "0x41d16914099b3808b55f9b223d4bf4d006d2aef3",
+			"type": "defaultStakingRewardsV2"
+		}
 	]
 }
