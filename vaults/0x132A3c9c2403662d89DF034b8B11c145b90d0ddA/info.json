@@ -1,0 +1,21 @@
+{
+	"name": "Vault 132A",
+	"description": "A mock vault for testing purposes",
+	"tags": [
+		"vault",
+		"mock"
+	],
+	"links": [
+		{
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://etherscan.io/address/0x132A3c9c2403662d89DF034b8B11c145b90d0ddA"
+		}
+	],
+	"rewards": [
+		{
+			"address": "0x44085f528cb2d8a51b3fe4df9e223e6832bce70d",
+			"type": "defaultStakingRewardsV2"
+		}
+	]
+} 

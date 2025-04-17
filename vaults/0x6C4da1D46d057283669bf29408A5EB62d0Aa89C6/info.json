@@ -1,0 +1,21 @@
+{
+	"name": "Vault 6C4D",
+	"description": "A mock vault for testing purposes",
+	"tags": [
+		"vault",
+		"mock"
+	],
+	"links": [
+		{
+			"type": "explorer",
+			"name": "Etherscan",
+			"url": "https://etherscan.io/address/0x6C4da1D46d057283669bf29408A5EB62d0Aa89C6"
+		}
+	],
+	"rewards": [
+		{
+			"address": "0xd037a62cca73ba5b30d4e3656795c2e545ffaa89",
+			"type": "defaultStakingRewardsV2"
+		}
+	]
+} 
