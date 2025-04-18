@@ -1,0 +1,24 @@
+{
+	"name": "Ebunker",
+	"description": "Ebunker is a leading node operator and blockchain infrastructure company.",
+	"tags": [
+		"operator"
+	],
+	"links": [
+		{
+			"type": "website",
+			"name": "Website",
+			"url": "https://www.ebunker.io/"
+		},
+		{
+			"type": "website",
+			"name": "X",
+			"url": "https://x.com/ebunker_eth"
+		},
+		{
+			"type": "website",
+			"name": "Telegram",
+			"url": "https://t.me/ebunkerio"
+		}
+	]
+}
