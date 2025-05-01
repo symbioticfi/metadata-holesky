@@ -1,0 +1,19 @@
+{
+	"name": "DTEAM",
+	"description": "DTEAM provides reliable infrastructure to support and scale projects effectively, along with building essential tools tailored for project communities, node operators and developers.",
+	"tags": [
+		"operator"
+	],
+	"links": [
+		{
+			"type": "website",
+			"name": "DTEAM",
+			"url": "https://dteam.tech"
+		},
+		{
+			"type": "website",
+			"name": "X",
+			"url": "https://x.com/dteamtech"
+		}
+	]
+}
