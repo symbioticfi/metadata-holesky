@@ -1,0 +1,19 @@
+{
+	"name": "Dark Wing",
+	"description": "Securing the Future, One Block at a Time.",
+	"tags": [
+		"operator"
+	],
+	"links": [
+		{
+			"type": "website",
+			"name": "Website",
+			"url": "https://google.com"
+		},
+		{
+			"type": "website",
+			"name": "X",
+			"url": "http://x.com/darkwing_9k"
+		}
+	]
+}
