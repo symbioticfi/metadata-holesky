@@ -1,0 +1,14 @@
+{
+	"name": "Ryabina",
+	"description": "We are validators on awesome networks",
+	"tags": [
+		"operator"
+	],
+	"links": [
+		{
+			"type": "website",
+			"name": "Ryabina.io",
+			"url": "https://ryabina.io"
+		}
+	]
+}
