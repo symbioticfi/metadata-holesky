@@ -31,6 +31,7 @@ jobs:
           repository: ${{ github.event.pull_request.base.repo.full_name }}
 
       - name: Validate
+        if: steps.changes.outputs.exists == 'true'
         uses: symbioticfi/metadata-validation-scripts@main
         with:
           files: ${{ steps.changes.outputs.files }}
